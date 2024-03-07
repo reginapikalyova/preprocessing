@@ -135,7 +135,7 @@ def preprocess_molecules(file):
             yield mol_pyg_graph
 
 
-def process_bbs(file_name, name, processed_dir):
+def process_molecules(file_name, name, processed_dir):
     processed_molecules = []
     for data in tqdm(preprocess_molecules(file_name)):
         processed_molecules.append(data)
