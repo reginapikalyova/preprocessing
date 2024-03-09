@@ -139,6 +139,6 @@ def process_molecules(file_name, name, processed_dir):
     processed_molecules = []
     for data in tqdm(preprocess_molecules(file_name)):
         processed_molecules.append(data)
-    torch.save(processed_molecules, osp.join(processed_dir, f"{name}_bbs.pt"))
+    torch.save(processed_molecules, osp.join(processed_dir, f"{name}_molecules.pt"))
 
 
